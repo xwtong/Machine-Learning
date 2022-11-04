@@ -70,5 +70,5 @@ svm_pre=clf1.predict(test_x)
 svm = pd.DataFrame(data=svm_pre, columns=['comment'])
 svm['id'] = test.id
 svm = svm[['id', 'comment']]
-svm.to_csv('svm11.csv',index=False)
+svm.to_csv('./data/svm11.csv',index=False)
 print ("结束！")
